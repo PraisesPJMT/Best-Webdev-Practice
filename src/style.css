@@ -60,6 +60,7 @@ label {
   height: 40px;
   border: none;
   cursor: pointer;
+  background: #d3d3d3;
 }
 
 .task-display {
