@@ -4,6 +4,8 @@
 
 > "To-Do-List App" is a simple web app that displays a list of daily tasks and allows you to edit, add and remove task from that list.
 
+![Application Snapshort](./assets/project.png)
+
 ## Built With (Linter)
 
 - Webpack

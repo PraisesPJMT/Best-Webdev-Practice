@@ -18,11 +18,11 @@ export const uncheckedFormat = (item, task) => {
 
 export const checkFunction = (item, checkbox) => {
   const task = item.querySelector('.task-item');
-  const { value } = item.querySelector('input[name="tasks-item"]');
+  const id = Number(item.id);
   if (checkbox.checked) {
     checkedFormat(item, task);
     listCatalogue.forEach((listItem) => {
-      if (listItem.description === value) {
+      if (listItem.index === id) {
         listItem.complete = true;
       }
     });
@@ -30,7 +30,7 @@ export const checkFunction = (item, checkbox) => {
   } else {
     uncheckedFormat(item, task);
     listCatalogue.forEach((listItem) => {
-      if (listItem.description === value) {
+      if (listItem.index === id) {
         listItem.complete = false;
       }
     });
