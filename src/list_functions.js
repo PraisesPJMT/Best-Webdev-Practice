@@ -10,10 +10,10 @@ export const addToDoItem = (item) => {
   const complete = false;
   const index = listCatalogue.length + 1;
   todayList.createTask(index, complete, item);
-  todayListBox.innerHTML += `<li class="list-item">
+  todayListBox.innerHTML += `<li class="list-item" id="${index}">
                     <div class="task-display">
                         <input type="checkbox" name="tasks" class="checkbox">
-                        <input type="text" name="tasks-item" value="${item}" class="task-item" id="task-${index}" readonly>
+                        <input type="text" name="tasks-item" value="${item}" class="task-item" readonly>
                     </div>
                         <i class="fa-solid fa-trash-can"></i>
                         <i class="fa-solid func fa-ellipsis-vertical"></i>
