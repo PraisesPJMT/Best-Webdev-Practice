@@ -14,7 +14,7 @@ export const resetColors = () => {
   checkboxes.forEach((checkbox) => {
     checkbox.style = hover;
   });
-}
+};
 
 export const resetList = () => {
   todayListBox.querySelectorAll('.func').forEach((button) => {
