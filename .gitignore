@@ -3,3 +3,6 @@ node_modules
 
 #Deployment folder
 dist
+
+#idea folder
+.idea
